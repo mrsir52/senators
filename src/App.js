@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div className="App">
        <h1>hello</h1>
-      {/* This is how you would use map to loop over the data to display what you want */}
+      {/* This is how you could use map to loop over the data to display what you want */}
        {this.state.senators.map((senator)=> (
        <div>
          <h1>Name: {senator.name}</h1>
