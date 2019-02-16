@@ -24,18 +24,23 @@ class App extends Component {
       this.setState({senators: data})
     });
   }
+
+
   render() 
   {    
     return (
       <div className="App">
        <h1>hello</h1>
       {/* This is how you could use map to loop over the data to display what you want */}
-       {this.state.senators.map((senator)=> (
+      {/* sort is a mutable function that changes the Array */}
+       {this.state.senators.sort((a, b) => a.itemM > b.itemM)
+       .map((senator)=> (
        <div>
          <h1>Name: {senator.name}</h1>
          <h2>State: {senator.state_name}</h2>
-         <h3>Gender: {senator.gender}</h3>
+         <button>Gender: {senator.gender}</button>
          </div>))}
+        
          {/* end of map */}
       </div>
     );
