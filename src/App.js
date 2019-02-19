@@ -35,6 +35,7 @@ class App extends Component {
         <div>
           <h5>{senator.name}</h5>
           <h6>{senator.state_name}</h6>
+          <h6>{senator.contact_page}</h6>
         </div>
       );
     });
