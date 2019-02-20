@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { link } from "fs";
 import Form from "./components/Form";
 
 class App extends Component {
@@ -35,7 +33,7 @@ class App extends Component {
         <div>
           <h5>{senator.name}</h5>
           <h6>{senator.state_name}</h6>
-          <h6>{senator.contact_page}</h6>
+          
         </div>
       );
     });
